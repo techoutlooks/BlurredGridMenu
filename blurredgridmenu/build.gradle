@@ -45,8 +45,8 @@ dependencies {
     compile 'com.android.support:support-v4:23.2.0'
 }
 
-def siteUrl = 'https://github.com/techoutlooks/BlurredGridMenu'
-def gitUrl = 'https://github.com/techoutlooks/BlurredGridMenu.git'
+def siteUrl = 'https://github.com/techoutlooks/blurredgridmenu'
+def gitUrl = 'https://github.com/techoutlooks/blurredgridmenu.git'
 
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
@@ -58,9 +58,9 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = 'maven'
-        name = 'BlurredGridMenu'
+        name = 'blurredgridmenu'
         websiteUrl = siteUrl
-        issueTrackerUrl = 'https://github.com/techoutlooks/BlurredGridMenu/issues'
+        issueTrackerUrl = 'https://github.com/techoutlooks/blurredgridmenu/issues'
         vcsUrl = gitUrl
         licenses = ['Apache-2.0']
         labels = ['Android']
@@ -73,7 +73,7 @@ install {
         pom {
             project {
                 packaging 'aar'
-                name 'BlurredGridMenu'
+                name 'blurredgridmenu'
                 url siteUrl
                 licenses {
                     license {
@@ -89,8 +89,8 @@ install {
                     }
                 }
                 scm {
-                    connection 'https://github.com/techoutlooks/BlurredGridMenu.git'
-                    developerConnection 'https://github.com/techoutlooks/BlurredGridMenu.git'
+                    connection 'https://github.com/techoutlooks/blurredgridmenu.git'
+                    developerConnection 'https://github.com/techoutlooks/blurredgridmenu.git'
                     url siteUrl
                 }
             }
