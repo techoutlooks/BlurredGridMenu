@@ -3,6 +3,6 @@
 VERSION_NAME=1.0.2
 VERSION_CODE=3
 
-GROUP=com.github.techoutlooks.blurredgridmenu
+GROUP=com.github.goka.blurredgridmenu
 
 NAME=BlurredGridMenu

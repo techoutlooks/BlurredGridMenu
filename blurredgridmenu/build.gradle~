@@ -13,12 +13,12 @@ repositories {
     jcenter()
 }
 
-//
-//group = 'com.github.goka.blurredgridmenu'
-//version = '1.0.2'
+
+group = 'com.github.techoutlooks.blurredgridmenu'
+version = '1.0.2'
 
 apply plugin: 'com.android.library'
-//apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 android {
