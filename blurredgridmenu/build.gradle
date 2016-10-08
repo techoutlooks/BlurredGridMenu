@@ -3,7 +3,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.0.0'
+        classpath 'com.android.tools.build:gradle:2.2.0'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
         classpath 'com.github.dcendents:android-maven-plugin:1.2'
     }
@@ -13,24 +13,23 @@ repositories {
     jcenter()
 }
 
-
-group = 'com.github.goka.blurredgridmenu'
-version = '1.0.2'
+//
+//group = 'com.github.goka.blurredgridmenu'
+//version = '1.0.2'
 
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
-
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
     defaultConfig {
-        minSdkVersion 11
-        targetSdkVersion 22
+        minSdkVersion 14
+        targetSdkVersion 23
         versionCode 3
         versionName "1.0.2"
-        renderscriptTargetApi 22
+        renderscriptTargetApi 23
         renderscriptSupportModeEnabled true
     }
     buildTypes {
@@ -42,11 +41,12 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:support-v4:23.2.0'
 }
 
-def siteUrl = 'https://github.com/gotokatsuya/BlurredGridMenu'
-def gitUrl = 'https://github.com/gotokatsuya/BlurredGridMenu.git'
+def siteUrl = 'https://github.com/techoutlooks/BlurredGridMenu'
+def gitUrl = 'https://github.com/techoutlooks/BlurredGridMenu.git'
 
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
@@ -60,7 +60,7 @@ bintray {
         repo = 'maven'
         name = 'BlurredGridMenu'
         websiteUrl = siteUrl
-        issueTrackerUrl = 'https://github.com/gotokatsuya/BlurredGridMenu/issues'
+        issueTrackerUrl = 'https://github.com/techoutlooks/BlurredGridMenu/issues'
         vcsUrl = gitUrl
         licenses = ['Apache-2.0']
         labels = ['Android']
@@ -89,8 +89,8 @@ install {
                     }
                 }
                 scm {
-                    connection 'https://github.com/gotokatsuya/BlurredGridMenu.git'
-                    developerConnection 'https://github.com/gotokatsuya/BlurredGridMenu.git'
+                    connection 'https://github.com/techoutlooks/BlurredGridMenu.git'
+                    developerConnection 'https://github.com/techoutlooks/BlurredGridMenu.git'
                     url siteUrl
                 }
             }

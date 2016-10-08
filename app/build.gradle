@@ -1,16 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
 
     defaultConfig {
         applicationId "com.goka.sample"
-        minSdkVersion 11
+        minSdkVersion 14
         targetSdkVersion 22
         versionCode 3
         versionName "1.0.2"
-        renderscriptTargetApi 22
+        renderscriptTargetApi 23
         renderscriptSupportModeEnabled true
     }
     buildTypes {
@@ -26,7 +26,6 @@ repositories {
 }
 
 dependencies {
-    // compile project(':blurredgridmenu')
-    compile 'com.github.goka.blurredgridmenu:blurredgridmenu:1.0.2'
-    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile project(':blurredgridmenu')
+    compile 'com.android.support:appcompat-v7:23.2.0'
 }
